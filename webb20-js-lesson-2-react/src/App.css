@@ -24,7 +24,7 @@ App {
   color: white;
 }
 
-.TweetColumn {
+/* .TweetColumn {
   display: flex;
   flex-direction: column;
   margin-top: 3em;
@@ -46,7 +46,7 @@ App {
   padding-top: 3em;
   padding-left: 0.5em;
   padding-right: 0.5em;
-}
+} */
 
 
 .App-link {

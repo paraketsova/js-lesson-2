@@ -1,7 +1,6 @@
 import React from 'react'
-
 export default function Thumbnail({imageURL}) {
     return (
-        <img src={imageURL} />
+        <img className="img-fluid" src={imageURL} />
     )
 }

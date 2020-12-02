@@ -31,11 +31,20 @@ function App() {
     }
   ]
   return (
-    <div className='TweetColumn'>
-      <Tweet author={tweetList[0].author} content={tweetList[0].content} date={tweetList[0].date} imageURL={tweetList[0].imageURL} />
+    <div className='container'>
+      {tweetList.map((item, index) => {
+        return <Tweet
+        key={index}
+        author={item.author} 
+        content={item.content}
+        date={item.date}
+        imageURL={item.imageURL}
+          />
+      })}
+      {/* <Tweet author={tweetList[0].author} content={tweetList[0].content} date={tweetList[0].date} imageURL={tweetList[0].imageURL} />
       <Tweet author={tweetList[1].author} content={tweetList[1].content} date={tweetList[1].date} imageURL={tweetList[1].imageURL} />
       <Tweet author={tweetList[2].author} content={tweetList[2].content} date={tweetList[2].date} imageURL={tweetList[2].imageURL} />
-      <Tweet author={tweetList[3].author} content={tweetList[3].content} date={tweetList[3].date} imageURL={tweetList[3].imageURL} />
+      <Tweet author={tweetList[3].author} content={tweetList[3].content} date={tweetList[3].date} imageURL={tweetList[3].imageURL} /> */}
     </div>
   );
 }
